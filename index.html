@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/styles/index.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700itali&subset=latin,cyrillic">
+  <!--  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700itali&subset=latin,cyrillic"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic&subset=latin,cyrillic">
 </head>
 <body>
@@ -19,6 +19,21 @@
         <li><a href="/articles/5">Пять</a></li>
         <li><a href="/articles/6">Шесть</a></li>
     </ol>
+
+    <script>
+      WebFontConfig = {
+        google: {
+          families: ['PT Sans:400,700,400italic,700itali&subset=latin,cyrillic']
+        }
+      };
+
+      (function(d) {
+        var wf = d.createElement('script'), s = d.scripts[0];
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
+        s.parentNode.insertBefore(wf, s);
+      })(document);
+
+    </script>    
 </div>
 </body>
 </html>
